@@ -1,0 +1,7 @@
+# Stratascratch
+# Admin Department Employees Beginning in April or Later
+
+select count(worker_id)
+from worker
+where department = 'Admin'
+    and extract(month from joining_date) >= 04
